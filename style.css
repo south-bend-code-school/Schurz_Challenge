@@ -1,0 +1,674 @@
+body{
+  background-color: rgb(37,49,99) !important;
+}
+/********** Page Header ***************/
+#programHeader {
+  height: 35em;
+  color: rgb(37,49,99);
+  background-color: white;
+  padding: 1em 0 1px 0;
+}
+
+/********** Page Header Text ***************/
+#headerFont{
+  color: white;
+  font-size: 300%;
+  text-align: center;
+
+}
+
+#headerFont h1{
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Vollkorn', serif;
+}
+/********** Welcome Section & List of Content ***************/
+
+#welcomeDiv, #listOfContent{
+  color: white;
+  text-align: center;
+  background-color: rgb(37,49,99);
+  padding: 6px 0 6px 0;
+}
+
+#listOfContent{
+  font-size: 180%;
+  padding-bottom: 1em;
+}
+
+#welcomeDiv h2{
+  font-size: 210%;
+  padding-bottom: 1em;
+  font-family: 'Vollkorn', serif;
+}
+
+#listOfContent a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Vollkorn', serif;
+}
+
+#listOfContent a:hover{
+  color: rgb(174,201,224);
+  text-decoration: none;
+  font-size: 115%;
+}
+
+
+/********** Included in contents: About,
+Signing Up, Past Winners, Registration, Criteria,
+ Sponsors ***************/
+
+#about, #fiOverview,  #sponsors, #signUp, #judgeCriteria, #pastWinners, #Registration, #prizeMoney{
+  padding: 2% 10%;
+  text-align: left;
+  font-family: 'Vollkorn', serif;
+}
+
+#about, #fiOverview, #pastWinners, #sponsors, #Registration, #prizeMoney{
+  background-color: white;
+
+}
+
+#fiOverview ul{
+  font-size: 24px;
+  color:rgb(40,90,147);
+  font-family: 'Vollkorn', serif;
+}
+
+#fiOverview h2{
+  font-size: 28px;
+  color:rgb(40,90,147);
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  font-weight: bold;
+}
+/********** H1 tag Properties***************/
+
+#about h1, #fiOverview h1, #sponsors h1, #signUp h1, #judgeCriteria h1, #pastWinners h1, #Registration h1, #prizeMoney h1{
+  font-size: 4em;
+  font-family: 'Vollkorn', serif;
+}
+
+#about h1, #fiOverview h1, #sponsors h1, #pastWinners h1, #Registration h1{
+  color:rgb(37,49,99);
+  text-align: center;
+  margin-top: 1px;
+}
+
+#about p, #fiOverview p, #pastWinners p, #Registration p{
+  color: rgb(40,90,147);
+}
+
+/********** P tag Properties***************/
+
+#about p, #fiOverview p, #sponsors p, #signUp p, #judgeCriteria p, #pastWinners p, #Registration p, .whiteText p, sponsors p{
+  font-size: 24px;
+  text-align: left;
+}
+
+
+/********** Registration Button Properties***************/
+
+
+#registerButton{
+  height: 80px;
+  width: 200px;
+  background-color: rgb(40,90,147);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+#registerButton:hover{
+  background-color: rgb(37,49,99);
+  color: white;
+
+}
+
+
+/********** More Info Button Properties***************/
+
+#myBtn{
+  height: 60px;
+  width: 180px;
+  background-color: rgb(40,90,147);
+  color: white;
+  font-size: 18px;
+}
+
+#myBtn:hover{
+  height: 60px;
+  width: 180px;
+  color: rgb(40,90,147);
+  background-color: white;
+}
+
+
+/********** Drop Down Window Properties***************/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  color: rgb(37,49,99);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(40,90,147);
+  color: white;
+}
+
+
+.modal-body {
+  padding: 2px 16px;
+}
+
+.modal-body h2{
+  color: rgb(37,49,99);
+  font-size: 18px !important;
+}
+
+.modal-body h3{
+  color: rgb(37,49,99);
+  font-size: 24px !important;
+  font-family: sans-serif;
+  font-style: normal !important;
+  font-weight: bold;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(40,90,147);
+  color: white;
+}
+
+/********** Globals for Contents***************/
+
+#sponsors{
+  text-align: center;
+}
+
+#signUp, #judgeCriteria{
+  background-color: rgb(40,90,147);
+}
+
+#Timeline, #prizeMoney{
+  background-color: rgb(37,49,99);
+  text-align: center;
+}
+
+/********** Specific Header Properties for Prize Money***************/
+
+#prizeMoney h2{
+  font-size: 18px !important;
+  color: rgb(40,90,147);
+}
+#prizeMoney h3{
+  font-size: 3em !important;
+  color: white;
+}
+
+#sponsors h3{
+  font-size: 3em !important;
+  color: rgb(40,90,147);
+}
+
+#prizeMoney h4{
+  font-size: 18px;
+  font-style: italic;
+}
+#prizeMoney h6{
+  font-size: 4em !important;
+  color: white;
+  text-align: center;
+}
+
+
+#prizeMoney h1, #sponsors h1{
+  margin-bottom: 0px;
+}
+
+
+
+#signUp h1, #judgeCriteria h1, #Timeline h1, #prizeMoney h1, .whiteText{
+  color: white;
+  text-align: center;
+  margin-top: 1px;
+  font-family: 'Vollkorn', serif;
+}
+
+
+/*********Prize Money Category Properties*********/
+
+#wrap:after {
+  display: block;
+  height: 0px;
+  clear: both;
+  float: none;
+}
+#wrap div {
+  float: left;
+  word-break: break-all;
+}
+#one {
+  width: 33%;
+  margin-bottom: 2em;
+}
+#two {
+  width: 33%;
+    margin-bottom: 2em;
+}
+#three {
+  width: 34%;
+    margin-bottom: 2em;
+}
+#four {
+  width: 33%;
+  margin-bottom: 2em;
+  background-color: white;
+}
+#five{
+  width: 33%;
+    margin-bottom: 2em;
+      background-color: white;
+}
+#six {
+  width: 34%;
+    margin-bottom: 2em;
+      background-color: white;
+}
+
+#Picone{
+  width: 25%;
+  margin-bottom: 2em;
+}
+#Pictwo{
+  width: 74%;
+  margin-bottom: 2em;
+}
+
+.tab-content p{
+  font-size: 20px;
+  font-family: 'Vollkorn', serif;
+
+}
+
+#first{
+  font-size: 24px;
+}
+#second{
+  font-size: 24px;
+}
+#third{
+  font-size: 24px;
+}
+#topCode{
+  font-size: 24px;
+}
+#topCode2{
+  font-size: 24px;
+}
+#crowdFave{
+  font-size: 24px;
+}
+
+/*.fa-heart{
+  animation: beat .25s infinite alternate;
+transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(1.4); }
+}*/
+
+#prizeMoney p{
+  text-align: center;
+  margin: 0;
+}
+
+
+#signUp p, #prizeMoney p, #judgeCriteria p{
+  color: white;
+}
+
+/*********PRIZE MONEY Icon Properties*********/
+
+.fa-heart:hover{
+  font-size: 100px;
+  color: red !important;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/*********TIMELINE Properties*********/
+
+#Timeline h1{
+  font-size: 4em;
+  padding: 0;
+  margin-top: 1px;
+}
+
+.container ul{
+  font-size: 20px;
+  font-family: 'Vollkorn', serif;
+}
+
+.container {
+  background:rgb(37,49,99);
+  width:90%;
+  margin:0 auto;
+  overflow:auto;
+  padding:2%;
+  width: auto !important;
+}
+.left-content {
+  float:left;
+  display:block;
+  width:20%;
+  padding:1% 1%;
+  color: white;
+  font-family: 'Vollkorn', serif;
+}
+.right-content {
+  float:left;
+  display:block;
+  width:80%;
+  padding:1% 1%;
+  color: white;
+  font-family: 'Vollkorn', serif;
+}
+.left-content {
+  border-right:7px dotted white;
+  text-align:right;
+}
+.right-content p {
+  margin:40px 0 150px;
+  font-size: 22px;
+}
+
+.left-content p {
+  margin:40px 0 150px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.container p {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7 ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.left-content .more-padding {
+  padding-right:100px;
+}
+.right-content .more-padding {
+  padding-left:100px;
+}
+
+
+/********** Past Winner text***************/
+
+/*#winner{
+  height: 300px;
+  width: 350px;
+}*/
+
+.winnerPic {
+  background:url('./images/winner2016.jpg') no-repeat left;
+  height: 20em;
+  width: 100%;
+  margin: 0;
+  background-size: contain;
+
+}
+
+
+#picOne {
+  width: 30%;
+  margin-right: 10px;
+  display: inline;
+  background-color: white;
+}
+#picTwo {
+  width: 67%;
+  margin-bottom: 1px;
+    background-color: white;
+}
+/********** Timeline Section***************/
+
+div {
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+.timeline {
+
+  height: 400px;
+}
+.timeline .timeline-item {
+  width: 100%;
+}
+
+/********** Sponsors Section***************/
+
+#sponsors{
+  padding: 1em 0 2em 0;
+}
+
+#sbcs, #schurz{
+  background-color: white;
+  color: black;
+  padding-top: 1em !important;
+  display:inline-block;
+}
+
+.centerH {
+  text-align: center;
+}
+
+
+.whiteboardPic {
+  background:url('../images/schurz_logo.png') no-repeat left;
+  height: 18em;
+  width: 100%;
+  background-size: cover;
+}
+
+
+/********** Adjusting to Responsiveness***************/
+
+
+@media only screen and (max-width: 1240px) {
+
+  #one, #two, #three, #four, #five{
+    width: 33%;
+    margin-bottom: 2em;
+    font-size: 10px;
+  }
+
+#six{
+    width: 34%;
+    margin-bottom: 2em;
+    font-size: 10px;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+
+  #one, #two, #three, #four, #five{
+    width: 33%;
+    margin-bottom: 2em;
+    font-size: 8px;
+  }
+
+#six{
+    width: 34%;
+    margin-bottom: 2em;
+    font-size: 8px;
+  }
+
+}
+@media only screen and (max-width: 920px) {
+
+  #one, #two, #three, #four, #five{
+    width: 33%;
+    margin-bottom: 2em;
+    font-size: 7px;
+  }
+
+#six{
+    width: 34%;
+    margin-bottom: 2em;
+    font-size: 7px;
+  }
+
+}
+@media only screen and (max-width: 830px) {
+
+  #one, #two, #three, #four, #five{
+    width: 33%;
+    margin-bottom: 2em;
+    font-size: 6px;
+  }
+
+#six{
+    width: 34%;
+    margin-bottom: 2em;
+    font-size: 6px;
+  }
+
+}
+
+
+@media only screen and (max-width: 950px) {
+
+  #programHeader {
+    height: 30em;
+  }
+
+  #headerFont{
+
+    font-size: 250%;
+    text-align: center;
+
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  #programHeader {
+    height: 25em;
+  }
+  #headerFont{
+
+    font-size: 200%;
+    text-align: center;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  #programHeader {
+    height: 30em;
+  }
+
+}
+
+#challengePartners, #challengeWinner {
+  margin-bottom: 20px;
+}
+
+
+.winner {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-size: cover !important;
+  background-clip:content-box;
+  height: 280px;
+}
+
+
+
+#winnerText{
+  font-size: 20px;
+font-family: 'Vollkorn', serif;
+color: rgb(40,90,147); !important;
+}
+#winnerText a{
+text-decoration: none;
+}
+
+.Partner {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background-size: contain !important;
+  background-clip:content-box;
+  height: 100px;
+}
+  .Schurz{background: url('./images/schurz_logo.png') no-repeat center;}
+  .SBCS{background: url('./images/SBCS-Logo-Banner-Big.png') no-repeat center;}
+  .IPark{background: url('./images/IP_logo.jpg') no-repeat center;}
+  .winner2016{background: url('./images/winner2016.jpg') no-repeat center;}
+
+.row{
+  margin-right: 0px !important;
+}
+
+div.hidden {
+    display: none;
+}
