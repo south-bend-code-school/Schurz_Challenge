@@ -12,6 +12,23 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="./main.js"></script>
 
+  <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <title>Parallax Content Slider with CSS3 and jQuery</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+      <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+      <meta name="author" content="Codrops" />
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" type="text/css" href="css/demo.css" />
+      <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="css/nojs.css" />
+  </noscript>
+
+
   <script src='http://code.jquery.com/jquery-2.0.3.min.js'></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./main.js"></script>
@@ -40,15 +57,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-<!-- **********SCHURZ PAGE HEADER*********** -->
+  <!-- **********SCHURZ PAGE HEADER*********** -->
 
   <div id="cmn-video-demo3__container">
     <video id="cmn-video-demo3__video" autoplay muted loop>
@@ -61,256 +78,222 @@
       </div>
     </div>
 
-<!-- ********** Div Welcoming people to the challenge *********** -->
-<div id ="welcomeDiv">
+    <div id="programHeader">
 
-  <h2>Welcome to the Schurz Innovation Challenge! </h2>
+      <ul class="noMargin nav nav-pills navbar-left">
+        <li><a href="#about" >About</a></li>
+        <li><a href="#Need">What do I need? </a></li>
+        <li><a href="#Prize">Prizes</a></li>
+        <li><a href="#Registration">Register Now</a></li>
+        <li><a href="#pastWinners">Previous Winners</a></li>
+        <li><a href="#Timeline">Event Timeline</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
 
-</div>
+      </ul>
+    </div>
 
-<!-- ********** Div that lists the content of the website *********** -->
-
-
-<div id ="listOfContent">
-  <a href="#about" >About</a> <br>
-  <a href="#signUp">Why should I sign up? </a> <br>
-  <a href="#Registration">Register Now</a> <br>
-  <a href="#prizeMoney">Prizes</a> <br>
-    <a href="#pastWinners">2016 Winner</a> <br>
-  <a href="#judgeCriteria">Judging Criteria</a> <br>
-  <a href="#fiOverview">Final Idea Overview</a> <br>
-  <a href="#Timeline">Event Timeline</a> <br>
-  <a href="#sponsors">Sponsors</a> <br>
-
-</div>
-
-<!-- ********** About Section of the website *********** -->
-
-<div id="about"><a href="about"></a>
-  <h1> About</h1>
-  <p> Based in Mishawaka, Indiana, Schurz Communications, Inc. is a
-    diversified privately-owned, nationwide communications company.
-    The company publishes eleven daily and eight weekly newspapers in
-    medium and small markets with a combined circulation of nearly 225,000.
-    It also has ten television stations, owns thirteen radio stations and
-    operates three others, owns four cable companies, and a phone directory.
-    For more information, visit Schurz online at www.schurz.com. </p>
-
-  </div>
-
-
-  <!-- ********** Why Should You Sign Up section of the website *********** -->
-
-
-  <div id="signUp"><a href="signUp"></a>
-    <h1> Why should I sign up? </h1>
-    <center>
-      <!-- <i class="fa fa-question-circle" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i> -->
-    </center>
-    <p>
-      The Challenge offers a unique opportunity for you to test your
-      creativity and skills in online and mobile media technology.
-      South Bend Code School and IPND is available as mentoring resources
-      throughout the competition.  They also will be providing coding grants
-      for select teams without coding resources of their own to advance
-      prototype development. Through the challenge, any Notre Dame student,
-      on their own or with a team, will have the chance to work with online
-      media technology, create innovative ideas in the area of media technology,
-      and work on developing and creating a prototype of the idea
-      with the guidance of experienced mentors,
-      including Challenge partner South Bend Code School.
-
-
-
-    </p>
-  </div>
-
-
-  <!-- ********** Registration Link of the website *********** -->
-
-  <div id="Registration"><a href="Registration"></a>
-    <h1> Register Now </h1>
 
     <center>
-      <i class="fa fa-laptop" style="font-size:100px;color:rgb(37,49,99);text-shadow:2px 2px 4px #000000;"></i>
+
+      <button id="registerButtonTop">REGISTER HERE</button>
     </center>
-    <center>
 
-      <button id="registerButton">REGISTER HERE</button>
-    </center>
-  </div>
+    <!-- ********** About Section of the website *********** -->
 
-  <!-- ********** Prize money section of the website *********** -->
-
-  <div id="prizeMoney"><a href="prizeMoney"></a>
-
-
-
-
-<div class="container">
-<h1> Prizes </h1>
-  <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Prize Overview</a></li>
-    <li><a data-toggle="tab" href="#menu1"> General Prizes</a></li>
-    <li><a data-toggle="tab" href="#menu2">Independently Coded</a></li>
-    <li><a data-toggle="tab" href="#menu3">Popularity</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id="home" class="tab-pane fade in active">
-      <h3></h3>
-<p>
-
-  Prizes can be earned before you formally register for Schurz.
-Members in the Gigot Center Ideas Challenge for entries selected as good
-candidates for Schurz Innovation Challenge  qualify to receive $25 per team member.
-Members of the AT&T Hack-a-Thon event (9/30/16) for ideas selected as
-good candidates for Schurz Innovation Challenge are eligible to receive $75 per
- team member. Participating in Schurz also makes you eligible for more
- McCloskey Competition prize money. For the first ten Schurz teams that qualify
- and submit to McCloskey for the first round each team member can win $50.
- <br></br><strong>NOTE:</strong> These engagement prizes are in addition to the
-  $8,000 pool available at the Schurz Innovation Challenge
-  Final Event!
-
-
-</p>
+    <div id="about"><a href="about"></a>
+      <h1> About</h1>
+      <p> What is the Schurz competition? Why should I sign up? </p>
 
     </div>
-    <div id="menu1" class="tab-pane fade">
-      <h3>
-        <i class="fa fa-globe" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i>
-</h3>
-      <p id="first">1st Place - $2,500 </p>
-      <p id="second">2nd Place - $1,500</p>
-      <p id="third">3rd Place - $1,000</p>
-    </div>
-    <div id="menu2" class="tab-pane fade">
-      <h3>
-        <i class="fa fa-code" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i>
-      </h3>
-      <p id="topCode">  Top coded - $1,500</p>
-      <p id="topCode2">  Runner up coded - $1,000</p>
-    </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>
-        <i class="fa fa-heart" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i>
 
-      </h3>
-      <p id="crowdFave">  Crowd Favorite - $500</p>
-    </div>
-  </div>
+
+    <div id="Need"><a href="Need"></a>
+      <h1> What do I need to compete?</h1>
+
+      <p> You don't have to have developers on your team to compete. All you need
+        is a unique idea. If you are looking for developers, you can apply to have
+        your app coded. For more information on that process, click below.</p>
+
+      </div>
+
+      <div id="Prize"><a href="Prize"></a>
+
+        <h1> Prizes </h1>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-block">
+              <h3 class="card-title">General Prize</h3>
+              <h3>
+                <i class="fa fa-globe" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i>
+              </h3>
+
+              <h4 >1st Place - $2,500 </h4>
+              <h4 >2nd Place - $1,500</h4>
+              <h4 > 3rd Place - $1,000</h4>
+
+              <p class="card-text">The judging criteria for this category is as follows:</p>
+
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-block">
+              <h3 class="card-title">Independently Coded</h3>
+              <h3><i class="fa fa-code" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
+
+              <h4 > Top coded - $1,500</h4>
+              <h4 > Runner up coded - $1,000</h4>
+
+              <!-- filler row  IGNORE -->
+              <h6 > 3rd Place - $1,000</h6>
+
+              <p class="card-text">The judging criteria for this category is as follows:</p>
+
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-block">
+              <h3 class="card-title">Popularity</h3>
+              <h3><i class="fa fa-heart" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
+
+              <h4 >  Crowd Favorite - $500</h4>
+
+              <!-- filler row  IGNORE -->
+              <h6 >2nd Place - $1,500</h6>
+              <h6 > 3rd Place - $1,000</h6>
+
+
+              <p class="card-text">The judging criteria for this category is as follows:</p>
+
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ********** Registration Link of the website *********** -->
+
+<div id="Registration"><a href="Registration"></a>
+  <h1> Register Now </h1>
+
+  <center>
+    <i class="fa fa-laptop" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i>
+  </center>
+  <center>
+
+    <button id="registerButton">REGISTER HERE</button>
+  </center>
 </div>
 
+
+
+    <div id="pastWinners"><a href="pastWinners"></a>
+      <h1> Previous Winners</h1>
+      <!-- <p> Last year, the grand prize was taken home by ... </p> -->
+
+      			<div id="da-slider" class="da-slider">
+      				<div class="da-slide">
+      					<h2>First place</h2>
+      					<p>Last year's first place prize was taken home by...</p>
+      					<a href="#" class="da-link">Read more</a>
+      					<div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
+      				</div>
+      				<div class="da-slide">
+      					<h2>Second Place</h2>
+      					<p>This group one because of their...</p>
+      					<a href="#" class="da-link">Read more</a>
+      					<div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
+      				</div>
+      				<div class="da-slide">
+      					<h2>Crowd Favorite</h2>
+      					<p>Replace this schurz logo with the crowd favorite.</p>
+      					<a href="#" class="da-link">Read more</a>
+      					<div class="da-img"><img src="images/IP_logo.jpg" alt="image01" /></div>
+      				</div>
+      				<div class="da-slide">
+      					<h2>Quality Control</h2>
+      					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+      					<a href="#" class="da-link">Read more</a>
+      					<div class="da-img"><img src="images/4.png" alt="image01" /></div>
+      				</div>
+      				<nav class="da-arrows">
+      					<span class="da-arrows-prev"></span>
+      					<span class="da-arrows-next"></span>
+      				</nav>
+      			</div>
+              </div>
+      		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+      		<script type="text/javascript">
+      			$(function() {
+
+      				$('#da-slider').cslider({
+      					autoplay	: true,
+      					bgincrement	: 450
+      				});
+
+      			});
+      		</script>
+
+
+    </div>
+
+
+      <div class="container">
+        <div id="Timeline"><a href="Timeline"></a>
+          <h1> Event Timeline</h1>
+        </div>
+        <!-- <center>
+        <i class="fa fa-hourglass-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; padding-bottom: 10px;"></i>
+      </center> -->
+
+      <!-- <h1>Simple Animated Timeline Scroller</h1> -->
+      <div class="left-content">
+        <p>October 2016</p>
+        <p>October 30th, 2016</p>
+        <p>November 2016</p>
+        <p>December 2016</p>
+        <p>January 2017 </p>
+        <p>February 2017 </p>
+      </div>
+      <div class="right-content">
+        <p>Meet at IPND for information and
+          team formation networking – pizza will be served!</p>
+          <p>End of Registration</p>
+          <p>Challenge begins – with
+            lots of mentoring and support</p>
+            <p>Grant application closes on the 5th. The deadline is
+              extended for McCloskey Applicants</p>
+              <p>Test those applications</p>
+              <p>Final event with prize money! </p>
+            </div>
+            <!-- <center>
+            <i class="fa fa-flag-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; text-align:right;"></i>
+          </center> -->
         </div>
 
 
-        <div id="pastWinners"><a href="pastWinners"></a>
-          <h1> 2016 Winner </h1>
+        <div id="sponsors"><a href="sponsors"></a>
+          <h1> Sponsors </h1>
 
-          <div id="challengeWinner" class="row noMargin">
-            <!-- <a href="http://www.innovationparknd.com/"> -->
-              <div class="col-md-4 winner winner2016"></div>
-            <!-- </a> -->
-            <div class="col-md-8 winner">
-            <p id ="winnerText"> The first place team, Covur, won the top prize of $5,000 for its unique platform that helps local
-              businesses market directly to their audiences by automating email list growth using WiFi. To find
-              out more about last year’s first prize winner, visit their website <a href="https://covur.co/"> https://covur.co/</a>.
-              Other prizes were awarded to Commentate, a service that allows sports fans customize the
-              sportscaster they listen to during live events, Let It Out!, a mental wellness app that allows
-              individuals to record and regulate their day-to- day emotions and two prizes were given for the
-              best coding to Jamocracy, which enables users to add songs to Spotify playlists via text message,
-              and SquadSnap, which brings ephemeral pictures and videos to group communications. </p>
-            </div>
+
+          <div id="challengePartners" class="row noMargin">
+            <a href="http://www.innovationparknd.com/">
+              <div class="col-md-4 Partner IPark"></div>
+            </a>
+            <a href="http://www.schurz.com/">
+              <div class="col-md-4 Partner Schurz"></div>
+            </a>
+            <a href="http://southbendcodeschool.com/">
+              <div class="col-md-4 Partner SBCS"></div>
+            </a>
           </div>
 
-          </div>
+        </div>
 
+      </body>
 
-          <div id="judgeCriteria"><a href="judgeCriteria"></a>
-            <h1> Judging Criteria </h1>
-            <center>
-              <!-- <i class="fa fa-question-circle" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i> -->
-            </center>
-            <p>
-              Judging should focus on cohesiveness of the concept and prototype, with potential for impact and
-              degree of innovation versus the existing landscape considered once cohesiveness thresholds are met.
-              There is a prize for the best coding, which is distinct from (and potentially in addition to) the overall
-              prize. To be eligible for the coding prize, the coding needs to have been completed by current
-              Notre Dame students who are members of the team. Coding prize eligibility will be pre screened
-              and eligible teams will be indicated on the judging form which will be distributed at the competition.
-            </p>
-          </div>
-
-
-          <div id="fiOverview"><a href="fiOverview"></a>
-            <h1> Final Idea Overview</h1>
-<h2>Questions to Consider </h2>
-
-<ul>
-
-  <li>What pain/unmet need are you addressing?</li>
-  <li>What’s your amazing solution?</li>
-  <li>Who are your customers? How will this change their experience?</li>
-  <li>How might customers buy/acquire your solution?</li>
-  <li>What experiences have your team brought to the development of this idea?</li>
-  <li>What have you done so far that proves that you know your customers?</li>
-  <li>What are the next most important things needed?</li>
-</ul>
-            </div>
-
-          <div class="container">
-          <div id="Timeline"><a href="Timeline"></a>
-            <h1> Event Timeline</h1>
-          </div>
-          <!-- <center>
-            <i class="fa fa-hourglass-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; padding-bottom: 10px;"></i>
-          </center> -->
-
-            <!-- <h1>Simple Animated Timeline Scroller</h1> -->
-            <div class="left-content">
-              <p>October 2016</p>
-              <p>October 30th, 2016</p>
-              <p>November 2016</p>
-              <p>December 2016</p>
-              <p>January 2017 </p>
-              <p>February 2017 </p>
-            </div>
-            <div class="right-content">
-              <p>Meet at IPND for information and
-                team formation networking – pizza will be served!</p>
-                <p>End of Registration</p>
-                <p>Challenge begins – with
-                  lots of mentoring and support</p>
-                  <p>Grant application closes on the 5th. The deadline is
-                     extended for McCloskey Applicants</p>
-                    <p>Test those applications</p>
-                    <p>Final event with prize money! </p>
-                  </div>
-                  <!-- <center>
-                    <i class="fa fa-flag-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; text-align:right;"></i>
-                  </center> -->
-                </div>
-
-
-                <div id="sponsors"><a href="sponsors"></a>
-                  <h1> Sponsors </h1>
-
-
-                  <div id="challengePartners" class="row noMargin">
-                    <a href="http://www.innovationparknd.com/">
-                      <div class="col-md-4 Partner IPark"></div>
-                    </a>
-                    <a href="http://www.schurz.com/">
-                      <div class="col-md-4 Partner Schurz"></div>
-                    </a>
-                    <a href="http://southbendcodeschool.com/">
-                      <div class="col-md-4 Partner SBCS"></div>
-                    </a>
-                  </div>
-
-                </div>
-
-</body>
-
-</html>
+      </html>

@@ -22,6 +22,7 @@ $(window).scroll(function(){
 	});
 });
 
+
 //
 // jQuery(function ($) {
 //     function changeColor(selector, colors, time) {

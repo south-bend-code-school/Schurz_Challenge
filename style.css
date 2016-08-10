@@ -3,11 +3,16 @@ body{
 }
 /********** Page Header ***************/
 #programHeader {
-  height: 35em;
-  color: rgb(37,49,99);
-  background-color: white;
-  padding: 1em 0 1px 0;
+  height: 3em;
+  background-color: rgb(37,49,99);
+  color: white;
+  /*padding: 1em 0 1px 0;*/
 }
+
+#cmn-video-demo3__container{
+  margin-bottom: 0 !important;
+}
+
 
 /********** Page Header Text ***************/
 #headerFont{
@@ -24,113 +29,99 @@ body{
   font-weight: bold;
   font-family: 'Vollkorn', serif;
 }
-/********** Welcome Section & List of Content ***************/
-
-#welcomeDiv, #listOfContent{
-  color: white;
-  text-align: center;
-  background-color: rgb(37,49,99);
-  padding: 6px 0 6px 0;
-}
-
-#listOfContent{
-  font-size: 180%;
-  padding-bottom: 1em;
-}
-
-#welcomeDiv h2{
-  font-size: 210%;
-  padding-bottom: 1em;
-  font-family: 'Vollkorn', serif;
-}
-
-#listOfContent a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Vollkorn', serif;
-}
-
-#listOfContent a:hover{
-  color: rgb(174,201,224);
-  text-decoration: none;
-  font-size: 115%;
-}
 
 
-/********** Included in contents: About,
-Signing Up, Past Winners, Registration, Criteria,
- Sponsors ***************/
-
-#about, #fiOverview,  #sponsors, #signUp, #judgeCriteria, #pastWinners, #Registration, #prizeMoney{
+#about, #sponsors, #Need, #Registration, #Prize, #pastWinners{
   padding: 2% 10%;
   text-align: left;
   font-family: 'Vollkorn', serif;
 }
 
-#about, #fiOverview, #pastWinners, #sponsors, #Registration, #prizeMoney{
+#about, #sponsors,  #Prize,  #pastWinners{
   background-color: white;
 
 }
 
-#fiOverview ul{
-  font-size: 24px;
-  color:rgb(40,90,147);
-  font-family: 'Vollkorn', serif;
+#Need, #Registration{
+  background-color: rgb(37,49,99);
 }
 
-#fiOverview h2{
-  font-size: 28px;
-  color:rgb(40,90,147);
-  font-family: 'Vollkorn', serif;
-  text-align: center;
-  font-weight: bold;
-}
 /********** H1 tag Properties***************/
 
-#about h1, #fiOverview h1, #sponsors h1, #signUp h1, #judgeCriteria h1, #pastWinners h1, #Registration h1, #prizeMoney h1{
+#about h1, #sponsors h1, #Prize h1,  #pastWinners h1{
   font-size: 4em;
   font-family: 'Vollkorn', serif;
-}
-
-#about h1, #fiOverview h1, #sponsors h1, #pastWinners h1, #Registration h1{
   color:rgb(37,49,99);
   text-align: center;
   margin-top: 1px;
 }
 
-#about p, #fiOverview p, #pastWinners p, #Registration p{
+#Need h1, #Registration h1{
+  font-size: 4em;
+  font-family: 'Vollkorn', serif;
+  color:white;
+  text-align: center;
+  margin-top: 1px;
+}
+
+#about p, #Prize p,  #pastWinners p{
   color: rgb(40,90,147);
+}
+
+ #Registration p, #Need p{
+  color: white;
 }
 
 /********** P tag Properties***************/
 
-#about p, #fiOverview p, #sponsors p, #signUp p, #judgeCriteria p, #pastWinners p, #Registration p, .whiteText p, sponsors p{
+#about p, #sponsors p, #Registration p, .whiteText p, #Need p,  #pastWinners p{
   font-size: 24px;
   text-align: left;
 }
-
+/*
 
 /********** Registration Button Properties***************/
 
 
-#registerButton{
-  height: 80px;
-  width: 200px;
+
+#registerButtonTop{
+  height: 140px;
+  width: 260px;
   background-color: rgb(40,90,147);
   color: white;
-  font-size: 30px;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#registerButtonTop:hover{
+  background-color: white;
+  color: rgb(37,49,99);
+
+}
+
+
+#registerButton{
+  height: 140px;
+  width: 260px;
+  background-color: rgb(40,90,147);
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
   text-align: center;
 }
 
 #registerButton:hover{
-  background-color: rgb(37,49,99);
-  color: white;
+  background-color: white;
+  color: rgb(37,49,99);
 
 }
 
 
 /********** More Info Button Properties***************/
-
+/*
 #myBtn{
   height: 60px;
   width: 180px;
@@ -144,97 +135,9 @@ Signing Up, Past Winners, Registration, Criteria,
   width: 180px;
   color: rgb(40,90,147);
   background-color: white;
-}
+}*/
 
 
-/********** Drop Down Window Properties***************/
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  color: rgb(37,49,99);
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: rgb(40,90,147);
-  color: white;
-}
-
-
-.modal-body {
-  padding: 2px 16px;
-}
-
-.modal-body h2{
-  color: rgb(37,49,99);
-  font-size: 18px !important;
-}
-
-.modal-body h3{
-  color: rgb(37,49,99);
-  font-size: 24px !important;
-  font-family: sans-serif;
-  font-style: normal !important;
-  font-weight: bold;
-}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: rgb(40,90,147);
-  color: white;
-}
 
 /********** Globals for Contents***************/
 
@@ -242,18 +145,15 @@ Signing Up, Past Winners, Registration, Criteria,
   text-align: center;
 }
 
-#signUp, #judgeCriteria{
-  background-color: rgb(40,90,147);
-}
-
-#Timeline, #prizeMoney{
+#Timeline{
   background-color: rgb(37,49,99);
   text-align: center;
+
 }
 
 /********** Specific Header Properties for Prize Money***************/
 
-#prizeMoney h2{
+/*#prizeMoney h2{
   font-size: 18px !important;
   color: rgb(40,90,147);
 }
@@ -275,7 +175,7 @@ Signing Up, Past Winners, Registration, Criteria,
   font-size: 4em !important;
   color: white;
   text-align: center;
-}
+}*/
 
 
 #prizeMoney h1, #sponsors h1{
@@ -294,7 +194,7 @@ Signing Up, Past Winners, Registration, Criteria,
 
 /*********Prize Money Category Properties*********/
 
-#wrap:after {
+/*#wrap:after {
   display: block;
   height: 0px;
   clear: both;
@@ -332,57 +232,12 @@ Signing Up, Past Winners, Registration, Criteria,
       background-color: white;
 }
 
-#Picone{
-  width: 25%;
-  margin-bottom: 2em;
-}
-#Pictwo{
-  width: 74%;
-  margin-bottom: 2em;
-}
-
-.tab-content p{
-  font-size: 20px;
-  font-family: 'Vollkorn', serif;
-
-}
-
-#first{
-  font-size: 24px;
-}
-#second{
-  font-size: 24px;
-}
-#third{
-  font-size: 24px;
-}
-#topCode{
-  font-size: 24px;
-}
-#topCode2{
-  font-size: 24px;
-}
-#crowdFave{
-  font-size: 24px;
-}
-
-/*.fa-heart{
-  animation: beat .25s infinite alternate;
-transform-origin: center;
-}
-@keyframes beat{
-	to { transform: scale(1.4); }
-}*/
 
 #prizeMoney p{
   text-align: center;
   margin: 0;
-}
-
-
-#signUp p, #prizeMoney p, #judgeCriteria p{
   color: white;
-}
+}*/
 
 /*********PRIZE MONEY Icon Properties*********/
 
@@ -458,13 +313,6 @@ transform-origin: center;
 }
 
 
-/********** Past Winner text***************/
-
-/*#winner{
-  height: 300px;
-  width: 350px;
-}*/
-
 .winnerPic {
   background:url('./images/winner2016.jpg') no-repeat left;
   height: 20em;
@@ -474,7 +322,7 @@ transform-origin: center;
 
 }
 
-
+/*
 #picOne {
   width: 30%;
   margin-right: 10px;
@@ -485,7 +333,7 @@ transform-origin: center;
   width: 67%;
   margin-bottom: 1px;
     background-color: white;
-}
+}*/
 /********** Timeline Section***************/
 
 div {
@@ -629,12 +477,9 @@ div {
 
 }
 
-#challengePartners, #challengeWinner {
-  margin-bottom: 20px;
-}
 
 
-.winner {
+/*.winner {
   margin-top: 2em;
   margin-bottom: 1em;
   background-size: cover !important;
@@ -651,7 +496,7 @@ color: rgb(40,90,147); !important;
 }
 #winnerText a{
 text-decoration: none;
-}
+}*/
 
 .Partner {
   margin-top: 2em;
@@ -665,10 +510,65 @@ text-decoration: none;
   .IPark{background: url('./images/IP_logo.jpg') no-repeat center;}
   .winner2016{background: url('./images/winner2016.jpg') no-repeat center;}
 
-.row{
+/*.row{
   margin-right: 0px !important;
-}
+}*/
 
 div.hidden {
     display: none;
+}
+
+
+.row{
+  width: 100%;
+}
+.card{
+width: 350px;
+border: 1px solid rgb(40,90,147);
+box-shadow: 2px 2px 4px #888;
+border-top: 10px solid rgb(40,90,147);;
+min-height: 450px;
+padding-: 10px;
+margin: 10px;
+text-align: center;
+
+}
+
+.card h1{
+  font-weight: lighter;
+  margin-left: 100px;
+  margin-top: -70px;
+  color: rgb(40,90,147);
+}
+
+.card h3{
+  font-weight: bolder;
+  color: rgb(40,90,147);
+    font-size: 1.8em;
+}
+
+.card h4{
+  margin: 10px;
+  font-family: segoe ui;
+  line-height: 1.4em;
+  font-size: 1.4em;
+    color: rgb(40,90,147);
+      font-weight: bold;
+}
+
+.card h6{  /*filler text*/
+  margin: 10px;
+  font-family: segoe ui;
+  line-height: 1.4em;
+  font-size: 1.4em;
+    color: white;
+      font-weight: bold;
+}
+
+.card p{
+  margin: 10px;
+  font-family: segoe ui;
+  line-height: 1.4em;
+  font-size: 1.4em;
+    color: rgb(40,90,147);
 }
