@@ -2,6 +2,22 @@ body{
   background-color: rgb(37,49,99) !important;
   /*background: linear-gradient(blue, red) !important;*/
 }
+
+/********** General Styles ***************/
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a:active {
+  text-decoration: none !important;
+}
+
+a:visited {
+  text-decoration: none !important;
+}
+
+
 /********** Page Header ***************/
 #programHeader {
   height: 3em;
