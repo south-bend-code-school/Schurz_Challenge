@@ -1,16 +1,39 @@
 body{
   background-color: rgb(37,49,99) !important;
+  /*background: linear-gradient(blue, red) !important;*/
 }
 /********** Page Header ***************/
 #programHeader {
   height: 3em;
-  background-color: rgb(37,49,99);
-  color: white;
+  /*background-color: rgb(37,49,99);
+  color: white;*/
+  background-color: white;
+  color: rgb(37,49,99);
   /*padding: 1em 0 1px 0;*/
+}
+
+#title{
+  height:auto;
+  width: 100%;
+  /*background: linear-gradient(45deg,rgb(37,49,99), red);*/
+
+}
+
+#title-cont{
+  padding-top: 20px;
+  height: auto;
+  width: 100%;
+  background: linear-gradient(45deg,rgba(37,49,99,0.8), rgba(40,90,147,0.8)), url('images/winner2016.jpg');
+}
+
+#title-cont h1{
+  margin-left: 30px;
+  margin-top: 0px;
 }
 
 #cmn-video-demo3__container{
   margin-bottom: 0 !important;
+  height: auto;
 }
 
 
@@ -22,12 +45,17 @@ body{
 
 }
 
+/*h1{
+  font-family: 'maaxbold',sans-serif;
+  font-weight:lighter;
+}*/
+
 #headerFont h1{
   color: white;
-  font-size: 300%;
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Vollkorn', serif;
+  font-size: 200%;
+  text-align: left;
+  font-weight:bold;
+  font-family: 'Alright Sans', sans-serif;
 }
 
 
@@ -72,6 +100,11 @@ body{
   color: white;
 }
 
+marquee{
+  margin:0 0;
+  padding:0;
+}
+
 /********** P tag Properties***************/
 
 #about p, #sponsors p, #Registration p, .whiteText p, #Need p,  #pastWinners p{
@@ -85,15 +118,17 @@ body{
 
 
 #registerButtonTop{
-  height: 140px;
-  width: 260px;
-  background-color: rgb(40,90,147);
+  height: 50px;
+  width: 175px;
+  background-color: transparent;
   color: white;
-  font-size: 45px;
-  font-weight: bold;
+  font-size: 1.5em;
   text-align: center;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 2% 0 2% 30px;
+  transition: all 0.5s ease;
+
 }
 
 #registerButtonTop:hover{

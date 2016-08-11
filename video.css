@@ -4,7 +4,8 @@
 #cmn-video-demo3__container {
   position: relative;
   margin: 0 0 20px 0;
-  height: 300px;
+  /* height: 300px; */
+  height: auto;
   background-color: rgb(37,49,99);
   overflow: hidden;
 }

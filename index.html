@@ -13,15 +13,15 @@
   <script src="./main.js"></script>
 
   <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-       <title>Parallax Content Slider with CSS3 and jQuery</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
-      <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
-      <meta name="author" content="Codrops" />
-      <link rel="shortcut icon" href="../favicon.ico">
-      <link rel="stylesheet" type="text/css" href="css/demo.css" />
-      <link rel="stylesheet" type="text/css" href="css/style2.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Parallax Content Slider with CSS3 and jQuery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parallax Content Slider with CSS3 and jQuery" />
+  <meta name="keywords" content="slider, animations, parallax, delayed, easing, jquery, css3, kendo UI" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style2.css" />
   <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
   <noscript>
@@ -61,239 +61,209 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cslider.js"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      $('#da-slider').cslider({
+        autoplay	: true,
+        bgincrement	: 450
+      });
+
+    });
+  </script>
+
 </head>
 
 <body>
+  <!-- **********SCHURZ PAGE NAV*********** -->
+  <div id="programHeader">
+    <ul class="noMargin nav nav-pills navbar-left">
+      <li><a href="#about" >About</a></li>
+      <li><a href="#Need">What do I need? </a></li>
+      <li><a href="#Prize">Prizes</a></li>
+      <li><a href="#Registration">Register Now</a></li>
+      <li><a href="#pastWinners">Previous Winners</a></li>
+      <li><a href="#Timeline">Event Timeline</a></li>
+      <li><a href="#sponsors">Sponsors</a></li>
+    </ul>
+  </div>
 
-  <!-- **********SCHURZ PAGE HEADER*********** -->
-
-  <div id="cmn-video-demo3__container">
-    <video id="cmn-video-demo3__video" autoplay muted loop>
+  <!-- ********** Header / title *********** -->
+  <!-- <div id="cmn-video-demo3__container"> -->
+  <div id="title">
+    <!--<video id="cmn-video-demo3__video" autoplay muted loop>
       <source src="videos/fingers_type.MP4" type="video/mp4">
-      </video>
-      <div id="cmn-video-demo3__content">
-        <div id="headerFont" class="hidden">
-          <h1> Schurz Innovation Challenge</h1>
+    </video>-->
+    <!--<div id="cmn-video-demo3__content">-->
+    <div id="title-cont">
+      <div id="headerFont" class="hidden">
+        <h1><marquee behavior="slide" direction="down">SCHURZ</marquee></h1>
+        <h1 style="color:red;"><marquee behavior="slide" direction="left" scrollamount="40">INNOVATION</marquee></h1>
+        <h1><marquee behavior="slide" direction="down" scrolldelay="100">CHALLENGE</marquee></h1>
+      </div>
+        <button id="registerButtonTop">Register</button>
+    </div>
+  </div>
+
+  <!-- ********** About Section *********** -->
+  <div id="about"><a href="about"></a>
+    <h1> About</h1>
+    <p> What is the Schurz competition? Why should I sign up? </p>
+
+  </div>
+
+  <!-- ********** What do I need? *********** -->
+  <div id="Need"><a href="Need"></a>
+    <h1> What do I need to compete?</h1>
+    <p> You don't have to have developers on your team to compete. All you need
+      is a unique idea. If you are looking for developers, you can apply to have
+      your app coded. For more information on that process, click below.</p>
+  </div>
+
+  <!-- ********** Prizes *********** -->
+  <div id="Prize"><a href="Prize"></a>
+
+    <h1> Prizes </h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card card-block">
+          <h3 class="card-title">General Prize</h3>
+          <h3>
+            <i class="fa fa-globe" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i>
+          </h3>
+
+          <h4 >1st Place - $2,500 </h4>
+          <h4 >2nd Place - $1,500</h4>
+          <h4 > 3rd Place - $1,000</h4>
+
+          <p class="card-text">The judging criteria for this category is as follows:</p>
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-block">
+          <h3 class="card-title">Independently Coded</h3>
+          <h3><i class="fa fa-code" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
+
+          <h4 > Top coded - $1,500</h4>
+          <h4 > Runner up coded - $1,000</h4>
+
+          <!-- filler row  IGNORE -->
+          <h6 > 3rd Place - $1,000</h6>
+
+          <p class="card-text">The judging criteria for this category is as follows:</p>
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-block">
+          <h3 class="card-title">Popularity</h3>
+          <h3><i class="fa fa-heart" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
+
+          <h4 >  Crowd Favorite - $500</h4>
+
+          <!-- filler row  IGNORE -->
+          <h6 >2nd Place - $1,500</h6>
+          <h6 > 3rd Place - $1,000</h6>
+
+
+          <p class="card-text">The judging criteria for this category is as follows:</p>
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
     </div>
+  </div>
 
-    <div id="programHeader">
-
-      <ul class="noMargin nav nav-pills navbar-left">
-        <li><a href="#about" >About</a></li>
-        <li><a href="#Need">What do I need? </a></li>
-        <li><a href="#Prize">Prizes</a></li>
-        <li><a href="#Registration">Register Now</a></li>
-        <li><a href="#pastWinners">Previous Winners</a></li>
-        <li><a href="#Timeline">Event Timeline</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-
-      </ul>
+  <!-- ********** Timeline *********** -->
+  <div class="container" id="Timeline">
+    <div id="TimelineTitle"><a href="Timeline"></a>
+      <h1> Event Timeline</h1>
     </div>
+    <!-- <center>
+      <i class="fa fa-hourglass-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; padding-bottom: 10px;"></i>
+    </center> -->
 
-
-    <center>
-
-      <button id="registerButtonTop">REGISTER HERE</button>
-    </center>
-
-    <!-- ********** About Section of the website *********** -->
-
-    <div id="about"><a href="about"></a>
-      <h1> About</h1>
-      <p> What is the Schurz competition? Why should I sign up? </p>
-
+    <!-- <h1>Simple Animated Timeline Scroller</h1> -->
+    <div class="left-content">
+      <p>October 2016</p>
+      <p>October 30th, 2016</p>
+      <p>November 2016</p>
+      <p>December 2016</p>
+      <p>January 2017 </p>
+      <p>February 2017 </p>
     </div>
-
-
-    <div id="Need"><a href="Need"></a>
-      <h1> What do I need to compete?</h1>
-
-      <p> You don't have to have developers on your team to compete. All you need
-        is a unique idea. If you are looking for developers, you can apply to have
-        your app coded. For more information on that process, click below.</p>
-
-      </div>
-
-      <div id="Prize"><a href="Prize"></a>
-
-        <h1> Prizes </h1>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-block">
-              <h3 class="card-title">General Prize</h3>
-              <h3>
-                <i class="fa fa-globe" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i>
-              </h3>
-
-              <h4 >1st Place - $2,500 </h4>
-              <h4 >2nd Place - $1,500</h4>
-              <h4 > 3rd Place - $1,000</h4>
-
-              <p class="card-text">The judging criteria for this category is as follows:</p>
-
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-block">
-              <h3 class="card-title">Independently Coded</h3>
-              <h3><i class="fa fa-code" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
-
-              <h4 > Top coded - $1,500</h4>
-              <h4 > Runner up coded - $1,000</h4>
-
-              <!-- filler row  IGNORE -->
-              <h6 > 3rd Place - $1,000</h6>
-
-              <p class="card-text">The judging criteria for this category is as follows:</p>
-
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-block">
-              <h3 class="card-title">Popularity</h3>
-              <h3><i class="fa fa-heart" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
-
-              <h4 >  Crowd Favorite - $500</h4>
-
-              <!-- filler row  IGNORE -->
-              <h6 >2nd Place - $1,500</h6>
-              <h6 > 3rd Place - $1,000</h6>
-
-
-              <p class="card-text">The judging criteria for this category is as follows:</p>
-
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ********** Registration Link of the website *********** -->
-
-<div id="Registration"><a href="Registration"></a>
-  <h1> Register Now </h1>
-
-  <center>
-    <i class="fa fa-laptop" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000;"></i>
-  </center>
-  <center>
-
-    <button id="registerButton">REGISTER HERE</button>
-  </center>
-</div>
-
-
-
-    <div id="pastWinners"><a href="pastWinners"></a>
-      <h1> Previous Winners</h1>
-      <!-- <p> Last year, the grand prize was taken home by ... </p> -->
-
-      			<div id="da-slider" class="da-slider">
-      				<div class="da-slide">
-      					<h2>First place</h2>
-      					<p>Last year's first place prize was taken home by...</p>
-      					<a href="#" class="da-link">Read more</a>
-      					<div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
-      				</div>
-      				<div class="da-slide">
-      					<h2>Second Place</h2>
-      					<p>This group one because of their...</p>
-      					<a href="#" class="da-link">Read more</a>
-      					<div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
-      				</div>
-      				<div class="da-slide">
-      					<h2>Crowd Favorite</h2>
-      					<p>Replace this schurz logo with the crowd favorite.</p>
-      					<a href="#" class="da-link">Read more</a>
-      					<div class="da-img"><img src="images/IP_logo.jpg" alt="image01" /></div>
-      				</div>
-      				<div class="da-slide">
-      					<h2>Quality Control</h2>
-      					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-      					<a href="#" class="da-link">Read more</a>
-      					<div class="da-img"><img src="images/4.png" alt="image01" /></div>
-      				</div>
-      				<nav class="da-arrows">
-      					<span class="da-arrows-prev"></span>
-      					<span class="da-arrows-next"></span>
-      				</nav>
-      			</div>
-              </div>
-      		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      		<script type="text/javascript" src="js/jquery.cslider.js"></script>
-      		<script type="text/javascript">
-      			$(function() {
-
-      				$('#da-slider').cslider({
-      					autoplay	: true,
-      					bgincrement	: 450
-      				});
-
-      			});
-      		</script>
-
-
+    <div class="right-content">
+      <p>Meet at IPND for information and team formation networking – pizza will be served!</p>
+      <p>End of Registration</p>
+      <p>Challenge begins – with lots of mentoring and support</p>
+      <p>Grant application closes on the 5th. The deadline is extended for McCloskey Applicants</p>
+      <p>Test those applications</p>
+      <p>Final event with prize money! </p>
     </div>
+    <!-- <center>
+      <i class="fa fa-flag-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; text-align:right;"></i>
+    </center> -->
+  </div>
 
+  <!-- ********** Past Winners *********** -->
+  <div id="pastWinners"><a href="pastWinners"></a>
+    <h1> Previous Winners</h1>
+    <!-- <p> Last year, the grand prize was taken home by ... </p> -->
 
-      <div class="container">
-        <div id="Timeline"><a href="Timeline"></a>
-          <h1> Event Timeline</h1>
-        </div>
-        <!-- <center>
-        <i class="fa fa-hourglass-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; padding-bottom: 10px;"></i>
-      </center> -->
-
-      <!-- <h1>Simple Animated Timeline Scroller</h1> -->
-      <div class="left-content">
-        <p>October 2016</p>
-        <p>October 30th, 2016</p>
-        <p>November 2016</p>
-        <p>December 2016</p>
-        <p>January 2017 </p>
-        <p>February 2017 </p>
+    <div id="da-slider" class="da-slider">
+      <div class="da-slide">
+        <h2>First place</h2>
+        <p>Last year's first place prize was taken home by...</p>
+        <a href="#" class="da-link">Read more</a>
+        <div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
       </div>
-      <div class="right-content">
-        <p>Meet at IPND for information and
-          team formation networking – pizza will be served!</p>
-          <p>End of Registration</p>
-          <p>Challenge begins – with
-            lots of mentoring and support</p>
-            <p>Grant application closes on the 5th. The deadline is
-              extended for McCloskey Applicants</p>
-              <p>Test those applications</p>
-              <p>Final event with prize money! </p>
-            </div>
-            <!-- <center>
-            <i class="fa fa-flag-o" style="font-size:100px;color:white;text-shadow:2px 2px 4px #000000; text-align:right;"></i>
-          </center> -->
-        </div>
+      <div class="da-slide">
+        <h2>Second Place</h2>
+        <p>This group one because of their...</p>
+        <a href="#" class="da-link">Read more</a>
+        <div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
+      </div>
+      <div class="da-slide">
+        <h2>Crowd Favorite</h2>
+        <p>Replace this schurz logo with the crowd favorite.</p>
+        <a href="#" class="da-link">Read more</a>
+        <div class="da-img"><img src="images/IP_logo.jpg" alt="image01" /></div>
+      </div>
+      <div class="da-slide">
+        <h2>Quality Control</h2>
+        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        <a href="#" class="da-link">Read more</a>
+        <div class="da-img"><img src="images/4.png" alt="image01" /></div>
+      </div>
+      <nav class="da-arrows">
+        <span class="da-arrows-prev"></span>
+        <span class="da-arrows-next"></span>
+      </nav>
+    </div>
+  </div>
 
+  <!-- ********** Sponsors *********** -->
+  <div id="sponsors"><a href="sponsors"></a>
+    <h1> Sponsors </h1>
+    <div id="challengePartners" class="row noMargin">
+      <a href="http://www.innovationparknd.com/">
+        <div class="col-md-4 Partner IPark"></div>
+      </a>
+      <a href="http://www.schurz.com/">
+        <div class="col-md-4 Partner Schurz"></div>
+      </a>
+      <a href="http://southbendcodeschool.com/">
+        <div class="col-md-4 Partner SBCS"></div>
+      </a>
+    </div>
+  </div>
 
-        <div id="sponsors"><a href="sponsors"></a>
-          <h1> Sponsors </h1>
-
-
-          <div id="challengePartners" class="row noMargin">
-            <a href="http://www.innovationparknd.com/">
-              <div class="col-md-4 Partner IPark"></div>
-            </a>
-            <a href="http://www.schurz.com/">
-              <div class="col-md-4 Partner Schurz"></div>
-            </a>
-            <a href="http://southbendcodeschool.com/">
-              <div class="col-md-4 Partner SBCS"></div>
-            </a>
-          </div>
-
-        </div>
-
-      </body>
-
-      </html>
+</body>
+</html>
