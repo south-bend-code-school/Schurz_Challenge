@@ -21,22 +21,25 @@ a:visited {
 /********** Page Header ***************/
 #programHeader {
   height: 3em;
+  width: 100%;
   /*background-color: rgb(37,49,99);
   color: white;*/
+  position:fixed;
   background-color: white;
   color: rgb(37,49,99);
   /*padding: 1em 0 1px 0;*/
 }
 
 #title{
+  top: 3em;
   height:auto;
   width: 100%;
   /*background: linear-gradient(45deg,rgb(37,49,99), red);*/
-
 }
 
 #title-cont{
-  padding-top: 20px;
+  top: 3em;
+  padding-top:4.5em;
   height: auto;
   width: 100%;
   background: linear-gradient(45deg,rgba(37,49,99,0.8), rgba(40,90,147,0.8)), url('images/winner2016.jpg');
@@ -54,8 +57,35 @@ a:visited {
 
 
 /********** Page Header Text ***************/
-#headerFont{
-  
+/* cubic-bezier(1,.015,.295,1.225) */
+#head-1{
+  -webkit-animation: anim1 1.5s 0.2s 1 linear alternate;
+}
+
+@-webkit-keyframes anim1{
+  0% {-webkit-transform: translateY(100%);}
+  33% {-webkit-transform: translateY(0);}
+}
+
+#head-2{
+  color: red !important;
+  -webkit-animation: anim2 1.5s 0.2s 1 cubic-bezier(.62,.25,.47,.93) alternate;
+}
+
+@-webkit-keyframes anim2{
+  0% {-webkit-transform: translateX(100%);}
+  33% {-webkit-transform: translateX(100%);}
+  100% {-webkit-transform: translateX(0);}
+}
+
+#head-3{
+  -webkit-animation: anim3 1.5s 0.2s 1 linear alternate;
+}
+
+@-webkit-keyframes anim3{
+  0% {opacity: 0; -webkit-transform: translateY(100%);}
+  33% {opacity: 0; -webkit-transform: translateY(100%);}
+  66% {opacity: 1; -webkit-transform: translateY(0);}
 }
 
 /*h1{
@@ -141,7 +171,13 @@ marquee{
   border-radius: 10px;
   margin: 2% 0 2% 30px;
   transition: all 0.5s ease;
+  -webkit-animation: fadein 3s 0s 1 linear alternate;
+}
 
+@-webkit-keyframes fadein{
+  0% {opacity: 0}
+  66% {opacity: 0}
+  100% {opacity: 1}
 }
 
 #registerButtonTop:hover{

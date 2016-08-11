@@ -43,6 +43,7 @@ $(window).scroll(function(){
 //     });
 // });
 
+
 $(document).ready(function () {
-    $('div.hidden').fadeIn(3500).removeClass('hidden');
+    $('div.hidden').fadeIn(2000).removeClass('hidden');
 });
