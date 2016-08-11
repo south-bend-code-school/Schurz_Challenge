@@ -39,10 +39,7 @@ body{
 
 /********** Page Header Text ***************/
 #headerFont{
-  color: white;
-  font-size: 300%;
-  text-align: center;
-
+  
 }
 
 /*h1{
@@ -52,10 +49,10 @@ body{
 
 #headerFont h1{
   color: white;
-  font-size: 200%;
+  font-size: 500%;
   text-align: left;
   font-weight:bold;
-  font-family: 'Alright Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -78,7 +75,7 @@ body{
 
 #about h1, #sponsors h1, #Prize h1,  #pastWinners h1{
   font-size: 4em;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Montserrat', serif;
   color:rgb(37,49,99);
   text-align: center;
   margin-top: 1px;
@@ -86,7 +83,7 @@ body{
 
 #Need h1, #Registration h1{
   font-size: 4em;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Montserrat', serif;
   color:white;
   text-align: center;
   margin-top: 1px;
@@ -223,7 +220,7 @@ marquee{
   color: white;
   text-align: center;
   margin-top: 1px;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Montserrat', serif;
 }
 
 
