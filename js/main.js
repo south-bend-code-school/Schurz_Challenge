@@ -41,9 +41,8 @@ $(function() {
       $('.navLink').css('color','white');
     }
   }
-
-
-
-
-
 });
+
+/*https://blackrockdigital.github.io/startbootstrap-scrolling-nav/*/
+
+/*text-decoration: underline;*/
