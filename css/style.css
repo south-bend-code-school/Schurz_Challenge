@@ -105,6 +105,10 @@ a:visited {
   color: rgb(37, 49, 99) !important;
 }
 
+.container{
+  margin-left: 0 !important;
+}
+
 /********** Page Header ***************/
 
 #title{
