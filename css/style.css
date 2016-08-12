@@ -1,6 +1,6 @@
 body{
   background-color: rgb(37,49,99) !important;
-  /*background: linear-gradient(blue, red) !important;*/
+  margin: 0 auto;
 }
 
 /********** General Styles ***************/
@@ -17,155 +17,47 @@ a:visited {
   text-decoration: none !important;
 }
 
-
-/********** Page Header ***************/
-#programHeader {
-  height: 3em;
-  width: 100%;
-  position:fixed;
-  color: rgb(37,49,99);
-  z-index: 1;
-}
-
-#title{
-  top: 3em;
-  height:auto;
-  width: 100%;
-  /*background: linear-gradient(45deg,rgb(37,49,99), red);*/
-}
-
-#title-cont{
-  top: 3em;
-  padding-top:4.5em;
-  height: auto;
-  width: 100%;
-  background: linear-gradient(45deg,rgba(37,49,99,0.8), rgba(40,90,147,0.8)), url('images/winner2016.jpg');
-}
-
-#title-cont h1{
-  margin-left: 30px;
-  margin-top: 0px;
-}
-
-#cmn-video-demo3__container{
-  margin-bottom: 0 !important;
-  height: auto;
-}
-
-
-/********** Page Header Text ***************/
-/* cubic-bezier(1,.015,.295,1.225) */
-#head-1{
-  -webkit-animation: anim1 1.5s 0.2s 1 linear alternate;
-}
-
-@-webkit-keyframes anim1{
-  0% {-webkit-transform: translateY(100%);}
-  33% {-webkit-transform: translateY(0);}
-}
-
-#head-2{
-  color: red !important;
-  -webkit-animation: anim2 1.5s 0.2s 1 cubic-bezier(.62,.25,.47,.93) alternate;
-}
-
-@-webkit-keyframes anim2{
-  0% {-webkit-transform: translateX(100%);}
-  33% {-webkit-transform: translateX(100%);}
-  100% {-webkit-transform: translateX(0);}
-}
-
-#head-3{
-  -webkit-animation: anim3 1.5s 0.2s 1 linear alternate;
-}
-
-@-webkit-keyframes anim3{
-  0% {opacity: 0; -webkit-transform: translateY(100%);}
-  33% {opacity: 0; -webkit-transform: translateY(100%);}
-  66% {opacity: 1; -webkit-transform: translateY(0);}
-}
-
-/*h1{
-  font-family: 'maaxbold',sans-serif;
-  font-weight:lighter;
-}*/
-
-#headerFont h1{
-  color: white;
-  font-size: 500%;
-  text-align: left;
-  font-weight:bold;
-  font-family: 'Montserrat', sans-serif;
-}
-
-
-#about, #sponsors, #Need, #Registration, #Prize, #pastWinners{
-  padding: 2% 10%;
-  text-align: left;
-  font-family: 'Vollkorn', serif;
-}
-
-#about, #sponsors,  #Prize,  #pastWinners{
-  background-color: white;
-
-}
-
-#Need, #Registration{
-  background-color: rgb(37,49,99);
-}
-
-/********** H1 tag Properties***************/
-
-#about h1, #sponsors h1, #Prize h1,  #pastWinners h1{
-  font-size: 4em;
-  font-family: 'Montserrat', serif;
-  color:rgb(37,49,99);
+.contentSection {
   text-align: center;
-  margin-top: 1px;
+  padding: 2% 5%;
 }
 
-#Need h1, #Registration h1{
+.contentHead {
   font-size: 4em;
-  font-family: 'Montserrat', serif;
-  color:white;
+  margin: 0;
+  padding: 0.3em;
+  font-weight: bold;
   text-align: center;
-  margin-top: 1px;
+  color: rgba(37,99,171,1);
 }
 
-#about p, #Prize p,  #pastWinners p{
-  color: rgb(40,90,147);
+.row {
+  margin: 0 !important;
 }
 
- #Registration p, #Need p{
-  color: white;
+.cd-timeline-content, h2 {
+  font-size: 1.5em !important;
 }
 
-marquee{
-  margin:0 0;
-  padding:0;
+.cd-timeline-content, p {
+  font-size: 1em !important;
 }
 
-/********** P tag Properties***************/
-
-#about p, #sponsors p, #Registration p, .whiteText p, #Need p,  #pastWinners p{
-  font-size: 24px;
-  text-align: left;
+.lead {
+  font-size: 1.5em !important;
 }
-/*
-
-/********** Registration Button Properties***************/
 
 
+/**********Button Properties***************/
 
-#registerButtonTop{
+#registerButtonTop, .customButton{
   height: 50px;
   width: 175px;
   background-color: transparent;
   color: white;
   font-size: 1.5em;
   text-align: center;
-  border: 2px solid white;
-  border-radius: 10px;
+  border: 1.5px solid white;
   margin: 2% 0 2% 30px;
   transition: all 0.5s ease;
   -webkit-animation: fadein 3s 0s 1 linear alternate;
@@ -177,10 +69,9 @@ marquee{
   100% {opacity: 1}
 }
 
-#registerButtonTop:hover{
+#registerButtonTop:hover, .customButton:hover{
   background-color: white;
   color: rgb(37,49,99);
-
 }
 
 
@@ -201,22 +92,109 @@ marquee{
 }
 
 
-/********** More Info Button Properties***************/
-/*
-#myBtn{
-  height: 60px;
-  width: 180px;
-  background-color: rgb(40,90,147);
-  color: white;
-  font-size: 18px;
+/********** Page Nav ***************/
+#programHeader {
+  height: 3em;
+  width: 100%;
+  position:fixed;
+  color: rgb(37,49,99);
+  z-index: 1;
 }
 
-#myBtn:hover{
-  height: 60px;
-  width: 180px;
-  color: rgb(40,90,147);
+/********** Page Header ***************/
+
+#title{
+  top: 3em;
+  height:600px;
+  width: 100%;
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.8)), url('../images/winner2016.jpg');
+}
+
+#title-cont{
+  top: 3em;
+  padding-top:4.5em;
+  width: 100%;
+}
+
+#title-cont h1{
+  margin-left: 30px;
+  margin-top: 0px;
+  color: white;
+  font-size: 800%;
+  text-align: left;
+  font-weight:bold;
+}
+
+
+#head-1{
+  color: rgba(37,99,171,1) !important;
+  -webkit-animation: anim1 1.5s 0.2s 1 linear alternate;
+}
+
+@-webkit-keyframes anim1{
+  0% {-webkit-transform: translateY(100%);}
+  33% {-webkit-transform: translateY(0);}
+}
+
+#head-2{
+  /*color: red !important;*/
+  /*color: rgba(37,99,171,1) !important;*/
+  -webkit-animation: anim2 1.5s 0.2s 1 cubic-bezier(.62,.25,.47,.93) alternate;
+}
+
+@-webkit-keyframes anim2{
+  0% {-webkit-transform: translateX(100%);}
+  33% {-webkit-transform: translateX(100%);}
+  100% {-webkit-transform: translateX(0);}
+}
+
+#head-3{
+  color: rgba(37,99,171,1) !important;
+  -webkit-animation: anim3 1.5s 0.2s 1 linear alternate;
+}
+
+@-webkit-keyframes anim3{
+  0% {opacity: 0; -webkit-transform: translateY(100%);}
+  33% {opacity: 0; -webkit-transform: translateY(100%);}
+  66% {opacity: 1; -webkit-transform: translateY(0);}
+}
+
+
+/*==================About================*/
+
+#about {
   background-color: white;
-}*/
+}
+
+
+/*==================About================*/
+
+#need {
+  color: white !important;
+}
+
+/*==================Prizes================*/
+
+#prizes {
+  background-color: white;
+}
+
+/*==================Timeline================*/
+
+#timeline {
+  background: linear-gradient(45deg,rgba(37,49,99,0.8), rgba(40,90,147,0.8)) !important;
+}
+
+.cd-container {
+  margin-bottom: 0 !important;
+}
+/*==================Past Winners================*/
+
+#pastWinners {
+  background-color: white;
+}
+
+
 
 
 
@@ -229,12 +207,11 @@ marquee{
 #Timeline{
   background-color: rgb(37,49,99);
   text-align: center;
-
 }
 
 /********** Specific Header Properties for Prize Money***************/
 
-/*#prizeMoney h2{
+#prizeMoney h2{
   font-size: 18px !important;
   color: rgb(40,90,147);
 }
@@ -256,7 +233,7 @@ marquee{
   font-size: 4em !important;
   color: white;
   text-align: center;
-}*/
+}
 
 
 #prizeMoney h1, #sponsors h1{
@@ -322,80 +299,21 @@ marquee{
 
 /*********PRIZE MONEY Icon Properties*********/
 
-.fa-heart:hover{
-  font-size: 100px;
-  color: red !important;
-  text-shadow: 2px 2px 4px #000000;
-}
-
-/*********TIMELINE Properties*********/
-
-#Timeline h1{
-  font-size: 4em;
-  padding: 0;
-  margin-top: 1px;
-}
-
-.container ul{
-  font-size: 20px;
-  font-family: 'Vollkorn', serif;
-}
-
-.container {
-  background:rgb(37,49,99);
-  width:90%;
-  margin:0 auto;
-  overflow:auto;
-  padding:2%;
-  width: auto !important;
-}
-.left-content {
-  float:left;
-  display:block;
-  width:20%;
-  padding:1% 1%;
+.card{
+  background-color: rgba(37,99,171,1);
   color: white;
-  font-family: 'Vollkorn', serif;
-}
-.right-content {
-  float:left;
-  display:block;
-  width:80%;
-  padding:1% 1%;
-  color: white;
-  font-family: 'Vollkorn', serif;
-}
-.left-content {
-  border-right:7px dotted white;
-  text-align:right;
-}
-.right-content p {
-  margin:40px 0 150px;
-  font-size: 22px;
+  box-shadow: 2px 2px 4px #888;
+  min-height: 450px;
+  text-align: center;
+  margin: 0 0 4em 0;
+  padding: 2em 0;
 }
 
-.left-content p {
-  margin:40px 0 150px;
-  font-size: 22px;
-  font-weight: bold;
-}
-.container p {
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7 ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-}
-.left-content .more-padding {
-  padding-right:100px;
-}
-.right-content .more-padding {
-  padding-left:100px;
-}
+/*********PRIZE MONEY Icon Properties*********/
 
 
 .winnerPic {
-  background:url('./images/winner2016.jpg') no-repeat left;
+  background:url('../images/winner2016.jpg') no-repeat left;
   height: 20em;
   width: 100%;
   margin: 0;
@@ -416,7 +334,7 @@ marquee{
     background-color: white;
 }*/
 /********** Timeline Section***************/
-
+/*
 div {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -427,7 +345,7 @@ div {
 }
 .timeline .timeline-item {
   width: 100%;
-}
+}*/
 
 /********** Sponsors Section***************/
 
@@ -457,7 +375,7 @@ div {
 
 /********** Adjusting to Responsiveness***************/
 
-
+/*
 @media only screen and (max-width: 1240px) {
 
   #one, #two, #three, #four, #five{
@@ -487,8 +405,8 @@ div {
     font-size: 8px;
   }
 
-}
-@media only screen and (max-width: 920px) {
+}*/
+/*@media only screen and (max-width: 920px) {
 
   #one, #two, #three, #four, #five{
     width: 33%;
@@ -556,7 +474,7 @@ div {
     height: 30em;
   }
 
-}
+}*/
 
 
 
@@ -586,10 +504,11 @@ text-decoration: none;
   background-clip:content-box;
   height: 100px;
 }
-  .Schurz{background: url('./images/schurz_logo.png') no-repeat center;}
-  .SBCS{background: url('./images/SBCS-Logo-Banner-Big.png') no-repeat center;}
-  .IPark{background: url('./images/IP_logo.jpg') no-repeat center;}
-  .winner2016{background: url('./images/winner2016.jpg') no-repeat center;}
+
+.Schurz{background: url('../images/schurz_logo.png') no-repeat center;}
+.SBCS{background: url('../images/SBCS-Logo-Banner-Big.png') no-repeat center;}
+.IPark{background: url('../images/IP_logo.jpg') no-repeat center;}
+.winner2016{background: url('../images/winner2016.jpg') no-repeat center;}
 
 /*.row{
   margin-right: 0px !important;
@@ -597,59 +516,4 @@ text-decoration: none;
 
 div.hidden {
     display: none;
-}
-
-
-.row{
-  width: 100%;
-}
-.card{
-width: 350px;
-border: 1px solid rgb(40,90,147);
-box-shadow: 2px 2px 4px #888;
-border-top: 10px solid rgb(40,90,147);;
-min-height: 450px;
-padding-: 10px;
-margin: 10px;
-text-align: center;
-
-}
-
-.card h1{
-  font-weight: lighter;
-  margin-left: 100px;
-  margin-top: -70px;
-  color: rgb(40,90,147);
-}
-
-.card h3{
-  font-weight: bolder;
-  color: rgb(40,90,147);
-    font-size: 1.8em;
-}
-
-.card h4{
-  margin: 10px;
-  font-family: segoe ui;
-  line-height: 1.4em;
-  font-size: 1.4em;
-    color: rgb(40,90,147);
-      font-weight: bold;
-}
-
-.card h6{  /*filler text*/
-  margin: 10px;
-  font-family: segoe ui;
-  line-height: 1.4em;
-  font-size: 1.4em;
-    color: white;
-      font-weight: bold;
-}
-
-.card p{
-  margin: 10px;
-  font-family: segoe ui;
-  line-height: 1.4em;
-  font-size: 1.4em;
-    color: rgb(40,90,147);
 }

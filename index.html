@@ -6,7 +6,7 @@
 
   <title>Schurz Innovation Challenge</title>
 
-  <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" />
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png" /> -->
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/reset.css">
@@ -19,7 +19,6 @@
   <script src="./js/timeline.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/modernizr.js"></script>
-
 
 </head>
 
@@ -52,38 +51,42 @@
         <!-- <marquee behavior="slide" direction="down"> -->
       </div>
         <a href="https://docs.google.com/a/southbendcodeschool.com/forms/d/e/1FAIpQLScfnRd0tGf6Tb4Y6I-LKNW-c7CfEZ--BTCAZNlD0DHChT_pKQ/viewform" target="_blank">
-          <button id="registerButtonTop">Register</button>
+          <button id="registerButtonTop">register</button>
         </a>
     </div>
   </div>
 
   <!-- ********** About Section *********** -->
-  <div id="about"><a href="about"></a>
-    <p> The Schurz Innovation Challenge is a competition for students who are
+  <div id="about" class="contentSection"><a href="about"></a>
+    <h1 class="contentHead">BRING YOUR IDEA TO LIFE</h1>
+    <p class="lead"> The Schurz Innovation Challenge is a competition for students who are
     interested in bringing their innovative ideas to life through an incubation
-    style process. All that is needed to compete is an innovative idea! </p>
+    style process. All that is needed to compete is an innovative idea and the
+    desire to bring that idea to life! </p>
   </div>
 
   <!-- ********** What do I need? *********** -->
-  <div id="Need"><a href="Need"></a>
-    <h1> What do I need to compete?</h1>
-    <p> You don't have to have developers on your team to compete. All you need
-      is a unique idea. If you are looking for developers, you can apply to have
-      your app coded. For more information on that process, click below.</p>
+  <div id="need" class="contentSection"><a href="Need"></a>
+    <h1 class="contentHead">What Do You Need to Compete?</h1>
+    <p class="lead"> You don't have to have developers or business majors on your team to compete.
+      All you need is a unique and innovative idea. If you are looking for developers or help with
+      your business plan, we have you covered. For more information on the incubation process...</p>
+    <a href="https://docs.google.com/a/southbendcodeschool.com/forms/d/e/1FAIpQLScfnRd0tGf6Tb4Y6I-LKNW-c7CfEZ--BTCAZNlD0DHChT_pKQ/viewform" target="_blank">
+      <button class="customButton">click here</button>
+    </a>
+
   </div>
 
   <!-- ********** Prizes *********** -->
-  <div id="Prize"><a href="Prize"></a>
+  <div id="prizes" class="row">
 
-    <h1> Prizes </h1>
+    <h1 class="contentHead"> Prizes </h1>
 
-    <div class="row">
+    <div>
       <div class="col-md-4">
         <div class="card card-block">
           <h3 class="card-title">General Prize</h3>
-          <h3>
-            <i class="fa fa-globe" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i>
-          </h3>
+
 
           <h4 >1st Place - $2,500 </h4>
           <h4 >2nd Place - $1,500</h4>
@@ -97,7 +100,6 @@
       <div class="col-md-4">
         <div class="card card-block">
           <h3 class="card-title">Independently Coded</h3>
-          <h3><i class="fa fa-code" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
 
           <h4 > Top coded - $1,500</h4>
           <h4 > Runner up coded - $1,000</h4>
@@ -113,7 +115,6 @@
       <div class="col-md-4">
         <div class="card card-block">
           <h3 class="card-title">Popularity</h3>
-          <h3><i class="fa fa-heart" style="font-size:100px;color:rgb(40,90,147);text-shadow:2px 2px 4px #000000;"></i></h3>
 
           <h4 >  Crowd Favorite - $500</h4>
 
@@ -131,111 +132,90 @@
   </div>
 
   <!-- ********** Timeline *********** -->
-  <h1>Responsive Vertical Timeline</h1>
+  <div id="timeline">
+    <h1 class="contentHead">Timeline</h1>
 
-  <section id="cd-timeline" class="cd-container">
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="./images/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+    <section id="cd-timeline" class="cd-container">
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-picture">
+  				<img src="./images/cd-icon-picture.svg" alt="Picture">
+  			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>CHECKPOINT #1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  			<div class="cd-timeline-content">
+  				<h2>CHECKPOINT #1</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+  				<span class="cd-date">Jan 14</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="./images/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="./images/cd-icon-movie.svg" alt="Movie">
+  			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>CHECKPOINT #2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  			<div class="cd-timeline-content">
+  				<h2>CHECKPOINT #2</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+  				<span class="cd-date">Jan 18</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="./images/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-picture">
+  				<img src="./images/cd-icon-picture.svg" alt="Picture">
+  			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>CHECKPOINT #3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Jan 24</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  			<div class="cd-timeline-content">
+  				<h2>CHECKPOINT #3</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+  				<span class="cd-date">Jan 24</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="./images/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-location">
+  				<img src="./images/cd-icon-location.svg" alt="Location">
+  			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>CHECKPOINT #4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  			<div class="cd-timeline-content">
+  				<h2>CHECKPOINT #4</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+  				<span class="cd-date">Feb 14</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
 
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="./images/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-location">
+  				<img src="./images/cd-icon-location.svg" alt="Location">
+  			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
-				<h2>COMPETITION</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
+  			<div class="cd-timeline-content">
+  				<h2>COMPETITION</h2>
+  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+  				<span class="cd-date">Feb 18</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
 
-	</section> <!-- cd-timeline -->
-
+  	</section> <!-- cd-timeline -->
+  </div>
   <!-- ********** Past Winners *********** -->
-  <div id="pastWinners"><a href="pastWinners"></a>
-    <h1> Previous Winners</h1>
-    <!-- <p> Last year, the grand prize was taken home by ... </p> -->
+  <div id="pastWinners">
+    <h1 class="contentHead"> Previous Winners</h1>
 
-    <div id="da-slider" class="da-slider">
-      <div class="da-slide">
         <h2>First place</h2>
         <p>Last year's first place prize was taken home by...</p>
-        <a href="#" class="da-link">Read more</a>
-        <div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
-      </div>
-      <div class="da-slide">
+
         <h2>Second Place</h2>
         <p>This group one because of their...</p>
-        <a href="#" class="da-link">Read more</a>
-        <div class="da-img"><img src="images/winner2016.jpg" alt="image01" /></div>
-      </div>
-      <div class="da-slide">
+
+
         <h2>Crowd Favorite</h2>
         <p>Replace this schurz logo with the crowd favorite.</p>
-        <a href="#" class="da-link">Read more</a>
-        <div class="da-img"><img src="images/IP_logo.jpg" alt="image01" /></div>
-      </div>
-      <div class="da-slide">
+
+
         <h2>Quality Control</h2>
         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-        <a href="#" class="da-link">Read more</a>
-        <div class="da-img"><img src="images/4.png" alt="image01" /></div>
-      </div>
-      <nav class="da-arrows">
-        <span class="da-arrows-prev"></span>
-        <span class="da-arrows-next"></span>
-      </nav>
-    </div>
+
   </div>
 
   <!-- ********** Sponsors *********** -->

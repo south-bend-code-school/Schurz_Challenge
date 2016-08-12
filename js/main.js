@@ -28,7 +28,6 @@ $(function() {
 
   function checkNavPos(){
     var scrollPos = $('title').position();
-    console.log(scrollPos.top);
 
     if(scrollPos.top > 50){
       $('#programHeader').css('background-color', 'white');
