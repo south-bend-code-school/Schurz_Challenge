@@ -7,6 +7,9 @@ $(function() {
 
     $(document).on('scroll', checkNavPos);
 
+    // initial nav text color white
+    $('.navLink').css('color','white');
+
     $(window).scroll(function(){
     	$('.container p').each(function(){
         	var scrollTop     = $(window).scrollTop(),
@@ -31,8 +34,11 @@ $(function() {
 
     if(scrollPos.top > 50){
       $('#programHeader').css('background-color', 'white');
+      $('.navLink').css('color','rgb(37,49,99)');
+
     } else {
       $('#programHeader').css('background-color', 'transparent');
+      $('.navLink').css('color','white');
     }
   }
 

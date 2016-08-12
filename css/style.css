@@ -101,13 +101,17 @@ a:visited {
   z-index: 1;
 }
 
+.navLink:hover{
+  color: rgb(37, 49, 99) !important;
+}
+
 /********** Page Header ***************/
 
 #title{
   top: 3em;
   height:600px;
   width: 100%;
-  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.8)), url('../images/winner2016.jpg');
+  background: linear-gradient(45deg,rgba(37,49,99,0.5), rgba(40,90,147,0.5)), url('../images/winner2016.jpg');
 }
 
 #title-cont{
@@ -120,7 +124,8 @@ a:visited {
   margin-left: 30px;
   margin-top: 0px;
   color: white;
-  font-size: 800%;
+  /*font-size: 800%;*/
+  font-size: 8em;
   text-align: left;
   font-weight:bold;
 }
@@ -167,10 +172,14 @@ a:visited {
 }
 
 
-/*==================About================*/
+/*==================Need================*/
 
 #need {
   color: white !important;
+}
+
+#need h1{
+  color: white;
 }
 
 /*==================Prizes================*/
@@ -207,6 +216,10 @@ a:visited {
 #Timeline{
   background-color: rgb(37,49,99);
   text-align: center;
+}
+
+#timeline h1{
+  color: white;
 }
 
 /********** Specific Header Properties for Prize Money***************/
@@ -248,7 +261,6 @@ a:visited {
   margin-top: 1px;
   font-family: 'Montserrat', serif;
 }
-
 
 /*********Prize Money Category Properties*********/
 
@@ -351,7 +363,15 @@ div {
 
 #sponsors{
   padding: 1em 0 2em 0;
+  /*background: url('../images/winner2016.jpg');*/
+  background-color: white;
 }
+
+/*
+#sponsors h1{
+  color: white;
+}
+*/
 
 #sbcs, #schurz{
   background-color: white;
