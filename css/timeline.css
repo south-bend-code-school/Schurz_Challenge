@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -36,7 +36,7 @@ h1, h2 {
   font-weight: bold;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -54,9 +54,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -146,22 +146,25 @@ header h1 {
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin-left: -20px;
+  margin-top: -20px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  /*background: #75ce66;*/
+  background: rgba(37,49,99,1);
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+  /*background: #c03b44;*/
+  background: rgba(37,49,99,1);
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  /*background: #f0ca45;*/
+  background: rgba(37,49,99,1);
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -258,7 +261,7 @@ header h1 {
   color: #303e49;
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
+  font-size: 20px !important;
   font-size: 0.8125rem;
 }
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
@@ -279,7 +282,7 @@ header h1 {
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
-  float: left;
+  float: left !important;
   padding: .8em 0;
   opacity: .7;
 }

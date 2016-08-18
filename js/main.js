@@ -26,6 +26,23 @@ $(function() {
     	});
     });
 
+    if($(window).width() > 900){
+      fullscreen();
+    }
+
+    $(window).resize(function(){
+      if($(window).width() > 900){
+        fullscreen();
+      }
+    });
+
+  }
+
+  function fullscreen(){
+    $('#title').css({
+      width: $(window).width(),
+      height: $(window).height()
+    });
   }
 
 
