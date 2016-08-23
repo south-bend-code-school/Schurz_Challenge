@@ -261,23 +261,13 @@ a:visited {
 #timeline p {
   font-size: 1em !important;
 }
-/*==================Past Winners================*/
-
-#pastWinners {
-  background-color: white;
-}
-
-
-
 
 
 /********** Globals for Contents***************/
 
-#sponsors{
-  text-align: center;
-}
 
-#Timeline{
+
+#timeline{
   background-color: rgb(37,49,99);
   text-align: center;
 }
@@ -297,10 +287,6 @@ a:visited {
   color: white;
 }
 
-#sponsors h3{
-  font-size: 3em !important;
-  color: rgb(40,90,147);
-}
 
 #prizeMoney h4{
   font-size: 18px;
@@ -460,37 +446,35 @@ div {
   margin-top: 2em;
   margin-bottom: 1em;
   background-size: contain !important;
-  background-clip:content-box;
+  background-clip: content-box;
+  height: 60px;
+}
+
+.schurz {
   height: 100px;
 }
 
-.Schurz{background: url('../images/schurz_logo.png') no-repeat center;}
-.SBCS{background: url('../images/SBCS-Logo-Banner-Big.png') no-repeat center;}
-.IPark{background: url('../images/IP_logo.jpg') no-repeat center;}
-.winner2016{background: url('../images/winner2016.jpg') no-repeat center;}
-
+.schurz{background: url('../images/schurz_logo.png') no-repeat center;}
+.sbcs{background: url('../images/SBCS-Logo-Banner-Big.png') no-repeat center;}
+.iPark{background: url('../images/IP_logo.jpg') no-repeat center;}
 
 div.hidden {
     display: none;
 }
 
 
-/********** Adjusting to Responsiveness***************/
+/**********Responsiveness***************/
 
-/*
-@media only screen and (max-width: 1240px) {
 
-  #one, #two, #three, #four, #five{
-    width: 33%;
-    margin-bottom: 2em;
-    font-size: 10px;
+@media only screen and (max-width: 1500px) {
+  #title-cont h1{
+    font-size: 10em;
   }
 
-#six{
-    width: 34%;
-    margin-bottom: 2em;
-    font-size: 10px;
+  #need p, #dev p {
+    font-size: 1.4em !important;
   }
+
 
 }
 @media only screen and (max-width: 1200px) {
@@ -507,8 +491,8 @@ div.hidden {
     font-size: 8px;
   }
 
-}*/
-/*@media only screen and (max-width: 920px) {
+}
+@media only screen and (max-width: 920px) {
 
   #one, #two, #three, #four, #five{
     width: 33%;
@@ -576,25 +560,4 @@ div.hidden {
     height: 30em;
   }
 
-}*/
-
-
-
-/*.winner {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  background-size: cover !important;
-  background-clip:content-box;
-  height: 280px;
 }
-
-
-
-#winnerText{
-  font-size: 20px;
-font-family: 'Vollkorn', serif;
-color: rgb(40,90,147); !important;
-}
-#winnerText a{
-text-decoration: none;
-}*/

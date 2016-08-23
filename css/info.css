@@ -1,0 +1,21 @@
+body{
+  background: white !important;
+  margin: 0 auto;
+}
+
+
+.walkthruSection {
+  margin-top: 8% !important;
+  height: 600px;
+}
+
+.walkthruSection h1 {
+  font-size: 3em;
+  color: rgba(37,99,171,1);
+}
+
+.walkthruSection p {
+  text-align: left !important;
+  font-size: 1.2em !important;
+  line-height: 150%;
+}
