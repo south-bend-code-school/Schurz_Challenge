@@ -39,7 +39,7 @@ $(function() {
   }
 
   function fullscreen(){
-    $('#title').css({
+    $('.hero').css({
       width: $(window).width(),
       height: $(window).height()
     });

@@ -1,0 +1,76 @@
+
+#grantForm {
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.7)), url('../images/commentate.png') no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: left;
+}
+
+#grantForm h3 {
+  color: lightgray;
+}
+
+#grantForm h1 {
+  color: white;
+  font-size: 3em;
+}
+
+.formStyle {
+  height: 50px;
+  text-align:center;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  outline: none;
+}
+
+#grantForm input {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: white;
+}
+
+input:hover, textarea:hover,
+input:active, textarea:active,
+input:visited, textarea:visited {
+  text-decoration: none !important;
+}
+
+.formbit{
+  display: inline-block;
+  margin-top: 2em;
+}
+
+#formName, #formEmail {
+  width: 30%;
+}
+
+#formMission {
+  width: 70%;
+}
+
+#formCustomer {
+  width: 65%;
+}
+
+#formMVP {
+  width: 65%;
+}
+
+#submitButton {
+  display: block;
+  height: 50px;
+  width: 175px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  border: 1.5px solid white;
+  margin: 2% 0 2%;
+  transition: all 0.5s ease;
+}
+
+#submitButton:hover {
+  background-color: white;
+  color: rgb(37,49,99);
+}
