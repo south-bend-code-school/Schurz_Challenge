@@ -1,6 +1,14 @@
 
+#grant-title {
+  top: 3em;
+  height:600px;
+  width: 100%;
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.5)), url('../images/travisatcomp.JPG') no-repeat center;
+  background-size: cover;
+}
+
 #grantForm {
-  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.7)), url('../images/commentate.png') no-repeat top center;
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.7)), url('../images/itslit.png') no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
   text-align: left;

@@ -84,6 +84,24 @@ a:visited {
   color: rgb(37,49,99);
 }
 
+.tertiaryButton {
+  height: 50px;
+  width: 175px;
+  background-color:  rgb(37,49,99);
+  color: white;
+  font-size: 1.5em !important;
+  text-align: center;
+  border: 1.5px solid white;
+  transition: all 0.5s ease;
+}
+
+.tertiaryButton:hover {
+  background-color: white;
+  color: rgb(37,49,99);
+  border: 1.5px solid rgb(37,49,99);
+
+}
+
 /********** Page Nav ***************/
 #programHeader {
   height: 3em;
@@ -103,22 +121,13 @@ a:visited {
 
 /********** Page Header ***************/
 
-#title{
+#main-title{
   top: 3em;
   height:600px;
   width: 100%;
   background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.5)), url('../images/winner2016.jpg') no-repeat top center;
   background-size: cover;
 }
-
-/*#title2{
-  top: 3em;
-  height:600px;
-  width: 100%;
-  background: linear-gradient(45deg,rgba(37,49,99,0.5), rgba(40,90,147,0.5)), url('../images/ceil.jpg');
-  background-repeat: no-repeat;
-  background-size:cover
-}*/
 
 #title-cont {
   top: 3em;
@@ -242,6 +251,36 @@ a:visited {
   background-color: white;
 }
 
+.subHead {
+  margin-top: 0 !important;
+  margin-bottom: 2%;
+  color: darkgray;
+}
+
+.card{
+  background-color: rgba(37,99,171,1);
+  color: white;
+  height: 350px;
+  box-shadow: 2px 2px 4px #888;
+  min-height: 250px;
+  text-align: center;
+  margin: 0 0 4em 0;
+  padding: 2em;
+}
+
+.cardTop, .cardBottom {
+  height: 45%;
+}
+
+.cardTop {
+  /*padding-bottom: 10px;*/
+  border-bottom: 1px solid white;
+  margin-bottom: 5%;
+}
+
+
+
+
 /*==================Timeline================*/
 
 #timeline {
@@ -261,9 +300,9 @@ a:visited {
   font-size: 1em !important;
 }
 
-
-/********** Globals for Contents***************/
-
+.timelineHeader {
+  color: darkblue !important;
+}
 
 
 #timeline{
@@ -275,138 +314,22 @@ a:visited {
   color: white;
 }
 
-/********** Specific Header Properties for Prize Money***************/
-
-#prizeMoney h2{
-  font-size: 18px !important;
-  color: rgb(40,90,147);
-}
-#prizeMoney h3{
-  font-size: 3em !important;
-  color: white;
+.timelineSecondary {
+  color: darkgray !important;
 }
 
 
-#prizeMoney h4{
-  font-size: 18px;
-  font-style: italic;
-}
-#prizeMoney h6{
-  font-size: 4em !important;
-  color: white;
-  text-align: center;
-}
+/********** Contact Section***************/
 
-
-#prizeMoney h1, #sponsors h1{
-  margin-bottom: 0px;
-}
-
-
-
-#signUp h1, #judgeCriteria h1, #Timeline h1, #prizeMoney h1, .whiteText{
-  color: white;
-  text-align: center;
-  margin-top: 1px;
-  font-family: 'Montserrat', serif;
-}
-
-/*********Prize Money Category Properties*********/
-
-/*#wrap:after {
-  display: block;
-  height: 0px;
-  clear: both;
-  float: none;
-}
-#wrap div {
-  float: left;
-  word-break: break-all;
-}
-#one {
-  width: 33%;
-  margin-bottom: 2em;
-}
-#two {
-  width: 33%;
-    margin-bottom: 2em;
-}
-#three {
-  width: 34%;
-    margin-bottom: 2em;
-}
-#four {
-  width: 33%;
-  margin-bottom: 2em;
+.contact {
   background-color: white;
 }
-#five{
-  width: 33%;
-    margin-bottom: 2em;
-      background-color: white;
-}
-#six {
-  width: 34%;
-    margin-bottom: 2em;
-      background-color: white;
+
+.contactInner {
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 2%;
 }
 
-
-#prizeMoney p{
-  text-align: center;
-  margin: 0;
-  color: white;
-}*/
-
-/*********PRIZE MONEY Icon Properties*********/
-
-.card{
-  background-color: rgba(37,99,171,1);
-  color: white;
-  box-shadow: 2px 2px 4px #888;
-  min-height: 250px;
-  text-align: center;
-  margin: 0 0 4em 0;
-  padding: 2em 0;
-}
-
-/*********PRIZE MONEY Icon Properties*********/
-
-
-.winnerPic {
-  background:url('../images/winner2016.jpg') no-repeat left;
-  height: 20em;
-  width: 100%;
-  margin: 0;
-  background-size: contain;
-
-}
-
-/*
-#picOne {
-  width: 30%;
-  margin-right: 10px;
-  display: inline;
-  background-color: white;
-}
-#picTwo {
-  width: 67%;
-  margin-bottom: 1px;
-    background-color: white;
-}*/
-/********** Timeline Section***************/
-/*
-div {
-  font-family: Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-}
-.timeline {
-
-  height: 400px;
-}
-.timeline .timeline-item {
-  width: 100%;
-}*/
 
 /********** Sponsors Section***************/
 
@@ -459,6 +382,17 @@ div {
 
 div.hidden {
     display: none;
+}
+
+/**********footer***************/
+
+footer {
+  background-color: white;
+}
+
+footer h6 {
+  color:rgb(37,49,99);
+  margin: 0 auto;
 }
 
 

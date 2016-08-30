@@ -3,6 +3,13 @@ body{
   margin: 0 auto;
 }
 
+#info-title {
+  top: 3em;
+  height:600px;
+  width: 100%;
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.5)), url('../images/travisatwhiteboard.png') no-repeat center;
+  background-size: cover;
+}
 
 .walkthruSection {
   margin-top: 8% !important;
