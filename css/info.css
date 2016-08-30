@@ -3,6 +3,10 @@ body{
   margin: 0 auto;
 }
 
+.container {
+  margin-left: auto !important;
+}
+
 #info-title {
   top: 3em;
   height:600px;
@@ -13,7 +17,6 @@ body{
 
 .walkthruSection {
   margin-top: 8% !important;
-  height: 600px;
 }
 
 .walkthruSection h1 {
