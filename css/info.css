@@ -33,29 +33,29 @@ body{
 #gsPic{
   height: 350px;
   background: url('../images/schurz_gettingstarted_v1-01.png') no-repeat top center;
-  background-size: cover;
+  background-size: auto;
 }
 
 #missionPic{
   height: 350px;
   background: url('../images/schurz_missionstatement&mvp_v1.png') no-repeat top center;
-  background-size: cover;
+  background-size: auto;
 }
 
 #customerPic{
   height: 350px;
   background: url('../images/schurz_customeridentification&validation_v1.png') no-repeat top center;
-  background-size: cover;
+  background-size: auto;
 }
 
 #processPic{
   height: 350px;
   background: url('../images/schurz_businessprocess_v1.png') no-repeat top center;
-  background-size: cover;
+  background-size: auto;
 }
 
 #wireframePic{
   height: 350px;
   background: url('../images/schurz_wireframing_v1.png') no-repeat top center;
-  background-size: cover;
+  background-size: auto;
 }
