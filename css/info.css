@@ -29,3 +29,33 @@ body{
   font-size: 1.2em !important;
   line-height: 150%;
 }
+
+#gsPic{
+  height: 350px;
+  background: url('../images/schurz_gettingstarted_v1-01.png') no-repeat top center;
+  background-size: cover;
+}
+
+#missionPic{
+  height: 350px;
+  background: url('../images/schurz_missionstatement&mvp_v1.png') no-repeat top center;
+  background-size: cover;
+}
+
+#customerPic{
+  height: 350px;
+  background: url('../images/schurz_customeridentification&validation_v1.png') no-repeat top center;
+  background-size: cover;
+}
+
+#processPic{
+  height: 350px;
+  background: url('../images/schurz_businessprocess_v1.png') no-repeat top center;
+  background-size: cover;
+}
+
+#wireframePic{
+  height: 350px;
+  background: url('../images/schurz_wireframing_v1.png') no-repeat top center;
+  background-size: cover;
+}
