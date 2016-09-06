@@ -265,20 +265,27 @@ a:visited {
   min-height: 250px;
   text-align: center;
   margin: 0 0 4em 0;
-  padding: 2em;
+  padding-top: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
+/*
 .cardTop, .cardBottom {
-  height: 45%;
+  height: 40%;
 }
+*/
 
 .cardTop {
   /*padding-bottom: 10px;*/
+  height: 55%;
   border-bottom: 1px solid white;
-  margin-bottom: 5%;
 }
 
-
+.cardBottom {
+  height: 40%;
+  margin-top: 5%;
+}
 
 
 /*==================Timeline================*/
