@@ -59,24 +59,31 @@ a:visited {
 
 #registerButtonTop, .secondaryButton{
   height: 50px;
-  width: 175px;
-  background-color: transparent;
+  /*width: 175px;*/
+  background-color: rgba(37,99,171,1);
   color: white;
   font-size: 1.5em;
   text-align: center;
   border: 1.5px solid white;
-  margin: 2% 0 5% 30px;
+  /*margin: 2% 0 5% 30px;*/
+  margin-bottom: 20px;
   transition: all 0.5s ease;
 }
 
 #registerButtonTop {
-  -webkit-animation: fadein 3s 0s 1 linear alternate;
+  -webkit-animation: fadein 1s 0s 1 linear alternate;
 }
 
 @-webkit-keyframes fadein{
   0% {opacity: 0}
   66% {opacity: 0}
   100% {opacity: 1}
+}
+
+#registerButtonTop:hover, .secondaryButton:hover{
+  background-color: white;
+  color: rgb(37,49,99);
+  border: 1px rgb(37,49,99) solid;
 }
 
 #registerButtonTop:hover, .secondaryButton:hover{
@@ -125,7 +132,7 @@ a:visited {
   top: 3em;
   height:600px;
   width: 100%;
-  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.5)), url('../images/jamocracy.JPG') no-repeat top center;
+  background: linear-gradient(45deg,rgba(37,49,99,1), rgba(40,90,147,0.5)), url('../images/winner2016.jpg') no-repeat top center;
   background-size: cover;
 }
 
